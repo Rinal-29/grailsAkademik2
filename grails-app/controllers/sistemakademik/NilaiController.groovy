@@ -12,18 +12,20 @@ class NilaiController {
 
     @Secured(["ROLE_ADMIN"])
     def create() {
+        def mahasiswa = Mahasiswa.list()
         def mataKuliah = MataKuliah.list()
-        [listMatkul: mataKuliah]
+        [listMatkul: mataKuliah, mahasiswa: mahasiswa]
     }
 
     def save() {
         def nilai = new Nilai(params)
         def mataKuliah = MataKuliah.list()
+        def mahasiswa = Mahasiswa.list()
 
         nilai.validate()
         if (nilai.hasErrors()){
             flash.message = "${message(code: 'input.error')}"
-            render(view: "create", model: [nilai: nilai, listMatkul: mataKuliah])
+            render(view: "create", model: [nilai: nilai, listMatkul: mataKuliah, mahasiswa: mahasiswa])
         } else {
             nilai.save flush:true, failOnError: true
             redirect(action: "index", controller:"nilai", params: [lang: params.lang])
@@ -34,9 +36,11 @@ class NilaiController {
     def edit() {
         def nilai = Nilai.get(params.id)
         def mataKuliah = MataKuliah.list()
+        def mahasiswa = Mahasiswa.list()
         [
                 nilaiMhs: nilai,
-                listMatkul: mataKuliah
+                listMatkul: mataKuliah,
+                mahasiswa: mahasiswa
         ]
     }
 

@@ -24,7 +24,7 @@
         <div class="card-body">
             <div class="form-group">
                 <label>Username</label>
-                <g:textField name="=username" class="form-control" placeholder="${message(code: "placeholder.name")}"/>
+                <g:textField name="username" class="form-control" placeholder="${message(code: "placeholder.name")}"/>
                 <span class="text-danger"><g:renderErrors bean="${user}" field="username" /></span>
             </div>
             <div class="form-group">

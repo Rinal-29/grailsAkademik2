@@ -1,12 +1,18 @@
 package sistemakademik
 
+import grails.plugin.springsecurity.SpringSecurityService
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured(["ROLE_ADMIN", "ROLE_USER"])
 class DashboardController {
+    SpringSecurityService springSecurityService
 
     def index() {
-        String test = params.lang
+        def mhs = Mahasiswa.findByNama(springSecurityService.principal.username)
+        def listNilaiuser = Nilai.findAllByMahasiswa(mhs).size()
+        def listKrsUser = Krs.findAllByMahasiswa(mhs).size()
+        def listJadwalUser = Jadwal.findAllByMahasiswa(mhs).size()
+
         def mahasiswa = Mahasiswa.count
         def dosen = Dosen.count
         def matkul = MataKuliah.count
@@ -27,7 +33,10 @@ class DashboardController {
                 jadwal: jadwal,
                 ta: ta,
                 nilai: nilai,
-                krs: krs
+                krs: krs,
+                listNilai: listNilaiuser,
+                listKrs: listKrsUser,
+                listJadwal: listJadwalUser
         ]
     }
 }

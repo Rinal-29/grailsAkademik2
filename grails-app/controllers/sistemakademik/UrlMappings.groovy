@@ -33,5 +33,10 @@ class UrlMappings {
         "/$lang?/krs/$action?"(controller: "krs")
         "/$lang?/tahumAkademik/$action?"(controller: "tahunAkademik")
         "/$lang?/user/$action?"(controller: "user")
+
+        "/$lang?/krsMahasiswa/$action?"(controller: "krsMahasiswa")
+        "/$lang?/khsMahasiswa/$action?"(controller: "khsMahasiswa")
+        "/$lang?/jadwalMahasiswa/$action?"(controller: "jadwalMahasiswa")
+        "/$lang?/userAkunMahasiswa/$action?"(controller: "userAkunMahasiswa")
     }
 }

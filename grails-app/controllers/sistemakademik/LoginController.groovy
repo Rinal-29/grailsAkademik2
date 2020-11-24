@@ -5,6 +5,7 @@ class LoginController {
     def index() {}
 
     def dashboard() {
-        redirect action: "index", controller: "dashboard"
+        def username = params.username
+        redirect action: "index", controller: "dashboard", params: username
     }
 }

@@ -12,10 +12,10 @@ class RegisterController {
 
     def save () {
         def akun = new User(params)
+
         if (akun.validate()) {
 
             akun.save flush:true, failOnError: true
-            
             def role = Role.findWhere(authority: "ROLE_USER")
             if (!akun.authorities.contains(role)){
                 UserRole.create(akun, role, true)

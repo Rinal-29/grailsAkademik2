@@ -18,7 +18,6 @@ class UserController {
     def save() {
         def user = new User(params)
 
-
         user.validate()
         if (user.hasErrors()){
             flash.message = "${message(code: 'input.error')}"

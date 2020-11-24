@@ -2,6 +2,7 @@ package sistemakademik
 
 class Jadwal {
 
+    Mahasiswa mahasiswa
     Dosen dosen
     MataKuliah mataKuliah
     String hari

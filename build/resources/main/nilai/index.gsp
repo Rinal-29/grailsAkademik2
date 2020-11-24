@@ -35,8 +35,8 @@
                     <g:each in="${listNilai}" var="nilaiMhs">
                         <tr>
                             <td class="text-center"></td>
-                            <td>${nilaiMhs.nama}</td>
-                            <td>${nilaiMhs.nim}</td>
+                            <td>${nilaiMhs.mahasiswa.nama}</td>
+                            <td>${nilaiMhs.mahasiswa.nim}</td>
                             <td>${nilaiMhs.mataKuliah.namaMatkul}</td>
                             <td>${nilaiMhs.uts}</td>
                             <td>${nilaiMhs.uas}</td>

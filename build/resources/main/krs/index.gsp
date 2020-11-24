@@ -8,7 +8,8 @@
 <g:render template="/layouts/Navbar"/>
 <g:render template="/layouts/Sidebar"/>
 
-    <h1 class="mb-3"><g:message code="krs.header.name"/> </h1>
+<h1 class="mb-3"><g:message code="krs.header.name"/> </h1>
+
 <div class="col-md-12">
     <div class="card">
         <div class="card-header">
