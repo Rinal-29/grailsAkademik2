@@ -32,7 +32,7 @@
                 <tbody>
                 <g:each in="${penasehat}" var="pa">
                     <tr>
-                        <td class="text-center"></td>
+                        <td class="text-center">1</td>
                         <td>${pa.mahasiswa.nama}</td>
                         <td>${pa.dosen.nama}</td>
                         <td>${pa.tahunAkademik.priode}</td>

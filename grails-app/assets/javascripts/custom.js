@@ -17,14 +17,25 @@ $(document).ready(function () {
             nip: {
                 minlength: 5,
                 required: true
+            },
+            username: {
+                minlength: 3,
+                required: true
+            },
+            password: {
+                minlength: 5,
+                required: true
+            },
+            email: {
+                email: true,
+                required: true
             }
         },
         highlight: function (element) {
-            $(element).closest('.control-group').removeClass('success').addClass('error');
+            $(element).removeClass('success').addClass('error');
         },
         success: function (element) {
-            element.text('ok').addClass('valid')
-                .closest('.control-group').removeClass('error').addClass('success');
+            element.addClass('valid').removeClass('error').addClass('success');
         }
     });
 

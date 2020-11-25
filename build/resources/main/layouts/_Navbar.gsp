@@ -49,7 +49,7 @@
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <span class="dropdown-item dropdown-header">Menu</span>
                     <div class="dropdown-divider"></div>
-                    <a href="${createLink(controller: "user", action: "index", params: [lang: params.lang ?: null])}" class="dropdown-item">
+                    <a href="${createLink(controller: "userAkunMahasiswa", action: "index", params: [lang: params.lang ?: null])}" class="dropdown-item">
                         <i class="nav-icon fas fa-user"></i> <g:message code="sidebar.account.name"/>
                     </a>
                     <div class="dropdown-divider"></div>

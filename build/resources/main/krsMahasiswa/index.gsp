@@ -24,7 +24,6 @@
                     <th><g:message code="table.filed.courses"/> </th>
                     <th><g:message code="table.field.sks"/> </th>
                     <th><g:message code="table.field.academic"/> </th>
-                    <th><g:message code="table.field.action"/> </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,10 +33,6 @@
                         <td>${krs.mataKuliah.namaMatkul}</td>
                         <td>${krs.mataKuliah.sks}</td>
                         <td>${krs.tahunAkademik.priode}</td>
-                        <td class="text-center">
-                            <g:link action="edit"  id="${krs.id}" params="[lang: params.lang]" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></g:link>
-                            <g:link action="delete" id="${krs.id}" params="[lang: params.lang]" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></g:link>
-                        </td>
                     </tr>
                 </g:each>
                 </tbody>

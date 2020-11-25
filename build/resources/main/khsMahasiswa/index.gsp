@@ -41,9 +41,6 @@
             </table>
         </div>
     <!-- /.card-body -->
-        <div class="card-footer clearfix">
-            <g:link action="create" params="[lang: params.lang]" class="btn btn-primary float-right"><g:message code="score.button.name"/></g:link>
-        </div>
     </div>
 </div>
 

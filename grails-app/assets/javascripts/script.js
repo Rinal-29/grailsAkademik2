@@ -5,9 +5,13 @@ $(document).ready( function () {
         $(this).addClass("active");
     })
 
-    $('#myTable tbody tr').each(function (index) {
-        $(this).children("td:eq(0)").html(index + 1);
-    });
+    let lengthTable = $("#myTable tbody tr").length;
+    console.log(lengthTable);
+    if (lengthTable > 1){
+        $('#myTable tbody tr').each(function (index) {
+            $(this).children("td:eq(0)").html(index + 1);
+        });
+    }
 } );
 
 

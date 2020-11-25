@@ -142,7 +142,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="${createLink(controller: 'jadwal',action: 'index', params: [lang: params.lang ?: null])}" class="nav-link">
+                        <a href="${createLink(controller: 'jadwalMahasiswa',action: 'index', params: [lang: params.lang ?: null])}" class="nav-link">
                             <i class="nav-icon fas fa-clipboard-list"></i>
                             <p>
                                 <g:message code="sidebar.schedule.name"/>
@@ -150,7 +150,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="${createLink(controller: 'user',action: 'index', params: [lang: params.lang ?: null])}" class="nav-link">
+                        <a href="${createLink(controller: 'userAkunMahasiswa',action: 'index', params: [lang: params.lang ?: null])}" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
                                 <g:message code="sidebar.account.name"/>

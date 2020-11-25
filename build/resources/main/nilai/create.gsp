@@ -28,6 +28,7 @@
                 <div class="form-group">
                     <label><g:message code="table.field.student"/> </label>
                     <select name="mahasiswa" class="custom-select">
+                        <option value="pilih">Pilih...</option>
                         <g:each in="${mahasiswa}" var="mhs">
                             <option value="${mhs.id}">${mhs.nama}</option>
                         </g:each>
@@ -36,6 +37,7 @@
                 <div class="form-group">
                     <label><g:message code="table.filed.courses"/> </label>
                     <select name="mataKuliah" class="custom-select">
+                        <option value="pilih">Pilih...</option>
                         <g:each in="${listMatkul}" var="matkul">
                             <option value="${matkul.id}">${matkul.namaMatkul}</option>
                         </g:each>

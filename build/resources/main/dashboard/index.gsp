@@ -236,12 +236,12 @@
                     <div class="inner">
                         <p><g:message code="sidebar.schedule.name"/> </p>
 
-                        <h3></h3>
+                        <h3>${listJadwal}</h3>
                     </div>
                     <div class="icon">
                         <i class="nav-icon fas fa-clipboard-list"></i>
                     </div>
-                    <a href="${createLink(controller: "jadwal", action: "index", params: [lang: params.lang ?: null])}" class="small-box-footer">
+                    <a href="${createLink(controller: "jadwalMahasiswa", action: "index", params: [lang: params.lang ?: null])}" class="small-box-footer">
                         <g:message code="card.see.name"/> <i class="fas fa-arrow-circle-right"></i>
                     </a>
                 </div>

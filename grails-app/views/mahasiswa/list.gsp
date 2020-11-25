@@ -36,7 +36,7 @@
                 <tbody>
                     <g:each in="${mahasiswa}" var="mhs">
                         <tr>
-                            <td class="text-center"></td>
+                            <td class="text-center">1</td>
                             <td>${mhs.nim}</td>
                             <td>${mhs.nama}</td>
                             <td>${mhs.alamat}</td>

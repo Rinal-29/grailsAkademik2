@@ -28,6 +28,7 @@
                 <div class="form-group">
                     <label><g:message code="sidebar.lecture.name"/></label>
                     <select name="mahasiswa" class="custom-select">
+                        <option value="pilih">Pilih...</option>
                         <g:each in="${mahasiswa}" var="mhs">
                             <option value="${mhs.id}">${mhs.nama}</option>
                         </g:each>
@@ -36,6 +37,7 @@
                 <div class="form-group">
                     <label><g:message code="sidebar.lecture.name"/></label>
                     <select name="dosen" class="custom-select">
+                        <option value="pilih">Pilih...</option>
                         <g:each in="${dosen}" var="dsn">
                             <option value="${dsn.id}">${dsn.nama}</option>
                         </g:each>
@@ -44,6 +46,7 @@
                 <div class="form-group">
                     <label><g:message code="table.filed.courses"/></label>
                     <select name="mataKuliah" class="custom-select">
+                        <option value="pilih">Pilih...</option>
                         <g:each in="${matkul}" var="kuliah">
                             <option value="${kuliah.id}">${kuliah.namaMatkul}</option>
                         </g:each>
@@ -62,6 +65,7 @@
                 <div class="form-group">
                     <label><g:message code="table.field.academic"/></label>
                     <select name="tahunAkademik" class="custom-select">
+                        <option value="pilih">Pilih...</option>
                         <g:each in="${tahunAkademik}" var="ta">
                             <option value="${ta.id}">${ta.priode}</option>
                         </g:each>
@@ -70,6 +74,7 @@
                 <div class="form-group">
                     <label><g:message code="table.field.room"/></label>
                     <select name="ruangan" class="custom-select">
+                        <option value="pilih">Pilih...</option>
                         <g:each in="${ruangan}" var="kelas">
                             <option value="${kelas.id}">${kelas.namaRuangan}</option>
                         </g:each>

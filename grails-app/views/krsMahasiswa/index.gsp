@@ -29,7 +29,7 @@
                 <tbody>
                 <g:each in="${listKrs}" var="krs">
                     <tr>
-                        <td class="text-center"></td>
+                        <td class="text-center">1</td>
                         <td>${krs.mataKuliah.namaMatkul}</td>
                         <td>${krs.mataKuliah.sks}</td>
                         <td>${krs.tahunAkademik.priode}</td>

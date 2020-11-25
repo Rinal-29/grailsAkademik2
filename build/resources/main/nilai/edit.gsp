@@ -18,12 +18,12 @@
         <g:form action="update" role="form" id="${nilaiMhs.id}">
             <div class="card-body">
                 <div class="form-group">
-                    <label><g:message code="table.field.student"/> </label>
-                    <input required name="nama" class="form-control" value="${nilaiMhs.nama}"/>
-                </div>
-                <div class="form-group">
-                    <label>Nim</label>
-                    <input required name="nim" class="form-control" value="${nilaiMhs.nim}"/>
+                    <label><g:message code="table.filed.courses"/> </label>
+                    <select name="mahasiswa" class="custom-select">
+                        <g:each in="${mahasiswa}" var="mhs">
+                            <option value="${mhs.id}">${mhs.nama}</option>
+                        </g:each>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label><g:message code="table.filed.courses"/> </label>

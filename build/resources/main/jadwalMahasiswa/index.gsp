@@ -31,7 +31,7 @@
                 <tbody>
                 <g:each in="${listJadwal}" var="jadwal">
                     <tr>
-                        <td class="text-center">1</td>
+                        <td class="text-center"></td>
                         <td>${jadwal.dosen.nama}</td>
                         <td>${jadwal.mataKuliah.namaMatkul}</td>
                         <td>${jadwal.hari}</td>
